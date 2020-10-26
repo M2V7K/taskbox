@@ -1301,7 +1301,7 @@
                 "subtype": "variable",
                 "file": "src/app/components/task.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\n  component: TaskComponent,\n  props: {\n    task: taskData,\n    onPinTask: actionsData.onPinTask,\n    onArchiveTask: actionsData.onArchiveTask,\n  },\n})"
+                "defaultValue": "() => ({\n    component: TaskComponent,\n    props: {\n      task: object('task', { ...taskData }),\n      onPinTask: actionsData.onPinTask,\n      onArchiveTask: actionsData.onArchiveTask,\n    },\n  })"
             },
             {
                 "name": "defaultTasks",
@@ -1458,17 +1458,17 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  component: Header,\n  props: args,\n})"
+                "file": "src/stories/Button.stories.ts",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  component: Button,\n  props: args,\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "type": "Story<Button>",
-                "defaultValue": "(args: Button) => ({\n  component: Button,\n  props: args,\n})"
+                "file": "src/stories/Header.stories.ts",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  component: Header,\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1540,7 +1540,7 @@
                     "subtype": "variable",
                     "file": "src/app/components/task.stories.ts",
                     "type": "",
-                    "defaultValue": "() => ({\n  component: TaskComponent,\n  props: {\n    task: taskData,\n    onPinTask: actionsData.onPinTask,\n    onArchiveTask: actionsData.onArchiveTask,\n  },\n})"
+                    "defaultValue": "() => ({\n    component: TaskComponent,\n    props: {\n      task: object('task', { ...taskData }),\n      onPinTask: actionsData.onPinTask,\n      onArchiveTask: actionsData.onArchiveTask,\n    },\n  })"
                 },
                 {
                     "name": "Pinned",

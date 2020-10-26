@@ -40,6 +40,7 @@
     "@compodoc/compodoc": "^1.1.11",
     "@storybook/addon-actions": "^6.0.26",
     "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-knobs": "^6.0.27",
     "@storybook/addon-links": "^6.0.26",
     "@storybook/angular": "^6.0.26",
     "@testing-library/angular": "^10.1.2",

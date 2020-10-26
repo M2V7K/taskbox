@@ -11,10 +11,11 @@ import { Task } from '../models/task.model';
           disabled="true"
           name="checked"
         />
+         
         <span class="checkbox-custom" (click)="onArchive(task.id)"></span>
       </label>
       <div class="title">
-        <input type="text" [value]="task?.title" readonly="true" placeholder="Input title" />
+        <input type="text" [value]="task?.title" readonly="true" placeholder="Input title"  [ngStyle]="{textOverflow:'ellipsis'}" />
       </div>
       <div class="actions">
         <a *ngIf="task?.state !== 'TASK_ARCHIVED'" (click)="onPin(task.id)">
